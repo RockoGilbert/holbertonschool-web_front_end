@@ -1,4 +1,3 @@
-
 /* SUMMARY
     1. GLOBAL
     2. LAYOUT
@@ -62,11 +61,6 @@
   
     /** HEADER **/
     --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: -1rem;
-    --header-logo-link-left: 0;
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -180,17 +174,16 @@
   
   /* Grid
       ============================= */
-
+  
   .row {
     display: flex;
   }
-  
+
   ul.row {
-    margin: 1rem;
+    margin: -1rem;
     padding: 0;
     list-style: none;
   }
-  
   
   [class*='col-'] {
     margin: 1rem;
@@ -206,11 +199,7 @@
   
   /* Navbar
       ============================= */
-  
-  .navbar-menu {
-    float: right;
-  }
-  
+   
   .nav {
     margin: 0;
     padding: 0;
@@ -256,20 +245,19 @@
   
   /* Header
       ============================= */
-
-  .header-container {
-      display: flex;
-      justify-content: space-between;
-  }
   
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
-         background: transparent;
+         background: transparent !important;
   }
- 
-  
+
   /* Footer
       ============================= */
   
@@ -368,15 +356,18 @@
     padding: 10rem 40rem 2rem 0;
   }
   
-  /***Section Latest news =========================***/
+  /* Section Latest news ============================= */
+
   .section-latest-news .row {
-      flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   /* Section SERVICES ============================= */
-  .row {
-      flex-wrap: wrap;
+
+  .section-services .row {
+    flex-wrap: wrap;
   }
+
   /*** 4. CARD ***/
   
   /* Card (all styles)
@@ -504,3 +495,4 @@
     font-size: 10rem;
     z-index: -1;
   }
+  
