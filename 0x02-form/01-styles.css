@@ -658,7 +658,7 @@
     }
 
     .post-comments .section-title {
-      font-variant: small-caps
+      font-variant: small-caps;
     }
 
     /* Basic form
@@ -667,6 +667,6 @@
     form {
       display: flex;
       flex-direction: column; 
-      padding: rem 0;
+      padding: 1rem 0;
       margin: 0;
     }
