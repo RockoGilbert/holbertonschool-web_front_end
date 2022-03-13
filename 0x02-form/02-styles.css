@@ -670,7 +670,7 @@
       padding: 1rem 0;
       margin: 0;
     }
-     .fieldset {
+     fieldset {
          display: flex; 
          justify-content: flex-start;
          flex-direction: column;
