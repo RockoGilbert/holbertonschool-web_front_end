@@ -1054,7 +1054,7 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
       transition: width .4s cubic-bezier(0, 0.795, 0, 1);
     }
 
-    .form-search search input focus {
+    .form-search input[type="search"]:focus {
         position: relative;
         width: 15rem;
         z-index: 1;
