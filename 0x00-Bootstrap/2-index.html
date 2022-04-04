@@ -11,7 +11,7 @@
     <body>
         <header class="border-bottom p-2 m-3 bg-light mb-0">
             <ul class="list-group list-group-horizontal"  d-flex>
-                <li class="">
+                <li class="list-group-item mr-auto p-0">
                     <a href="/">
                         <img class="rounded" src="https://via.placeholder.com/150x50" />
                     </a>
@@ -25,10 +25,10 @@
             </ul>
         </header>
 
-        <main>
+        <main class="container-fluid">
             <section>
-                <div role="alert">
-                    <h4>List of chemical elements</h4>
+                <div role="alert" class="alert alert-info">
+                    <h4 class="alert-heading">List of chemical elements</h4>
                     <p>This is a list of the 5 first chemical elements which have been identified as of 2019.</p>
                     <hr>
                     <p>A popular visualization of all 118 elements is <a href="https://en.wikipedia.org/wiki/Periodic_table">the periodic table of the elements</a>.</p>
@@ -36,10 +36,10 @@
             </section>
 
             <section>
-                <h1>Chemical elements <span>only 5</span></h1>
+                <h1 class="mb-4 mt-5">Chemical elements <span class="badge badge-info badge-pill"><b>only 5</b></span></h1>
 
-                <div>
-                    <table>
+                <div class="table-responsive-lg">
+                    <table class="bg-dark table table-dark table-hover w-100">
                         <thead>
                             <tr>
                                 <th scope="col">Atomic number</th>
