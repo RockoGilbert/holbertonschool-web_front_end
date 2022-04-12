@@ -3,19 +3,19 @@
 ## Resources:books:
 Read or watch:
 * [Lexical scoping](https://javascript.info/closure)
-* [Closure]()
-* [Call stack]()
-* [Binding]()
-* [Callbacks]()
+* [Closure](https://javascript.info/closure)
+* [Call stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
+* [Binding](https://javascript.info/bind)
+* [Callbacks](https://javascript.info/callbacks)
 
----
+
 ## Learning Objectives:bulb:
-What you should learn from this project:
+### What you should learn from this project:
 
----
+
 
 ### [0. Lexical scoping and welcome message](./0-welcome.js)
-* Create a function named welcome:
+ Create a function named welcome:
 
 
 ### [1. Closure Scope Chain](./1-nested_functions.js)
@@ -40,8 +40,8 @@ Call the function outer
 
 
 
-### [2. Closure](./2-function_me.js)
-* Write a  function named welcomeMessage:
+## [2. Closure](./2-function_me.js)
+### Write a  function named welcomeMessage:
 
 
 ### [3. Closure and loops](./3-classrooms.js)
