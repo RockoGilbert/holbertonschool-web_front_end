@@ -5,12 +5,10 @@ class studentHogwarts{
       this.name = null;
   };
 
-  /* Private method changeScoreBy */
   changeScoreBy(points){
       this.privateScore = this.privateScore + points;
   };
 
-  /*The module gives access to four public methods (return an object)*/
   setName(newName){
       this.name = newName;
   };
@@ -25,7 +23,6 @@ class studentHogwarts{
 
   getScore(){
       return (this.name + ": " + this.privateScore);
-  // return `${this.name}: ${this.privateScore}`
   };
 };
 
