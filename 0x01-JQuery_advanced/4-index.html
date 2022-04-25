@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-    <head>
-
-        <meta charset="utf-8" />
-        <!-- JQuery 3.5.1 -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-
-        <!-- Chain DOM elements  -->
-        <script type="application/javascript">
-           function createFamilyTree () {
-            $('body').append('<table></table>'),
-            $('table').append('<thead></thead>'),
-            $('thead').append('<tr></tr>'),
-            $('thead > tr').append('<th></th>'),
-            $('thead > tr > th').text('Firstname'),
-            $('thead > tr').append('<th></th>'),
-            $('thead > tr > th:nth-child(2)').text('Lastname'),
-            $('table').append('<tbody></tbody>'),
-            $('tbody').append('<tr></tr>'),
-            $('tbody').append('<tr></tr>'),
-            $('tbody').append('<tr></tr>'),
-            $('tbody > tr:nth-child(1)').append('<td></td>'),
-            $('tbody > tr:nth-child(1)').append('<td></td>'),
-            $('tbody > tr:nth-child(2)').append('<td></td>'),
-            $('tbody > tr:nth-child(2)').append('<td></td>'),
-            $('tbody > tr:nth-child(3)').append('<td></td>'),
-            $('tbody > tr:nth-child(3)').append('<td></td>'),
-            $('tbody > tr:nth-child(1) > td:first').text('Guillaume'),
-            $('tbody > tr:nth-child(1) > td:last').text('Salva'),
-            $('tbody > tr:nth-child(2) > td:first').text('Paulette'),
-            $('tbody > tr:nth-child(2) > td:last').text('Salva'),
-            $('tbody > tr:nth-child(3) > td:first').text('Antoine'),
-            $('tbody > tr:nth-child(3) > td:last').text('Salva');
-
-           };
-           function replaceFamilyTree () {
-            $('tbody').replaceWith(`<tbody><tr><td>Gerard</td><td>Bonissa</td></tr></tbody>`);
-            };
-
-            $(function () {
-                createFamilyTree();
-                replaceFamilyTree();
-            });
-
-        </script>
-
-        <title>Task 3</title>
-
-    </head>
-
-    <body>
-
-    </body>
-
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 4</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/javascript">
+      const createFamilyTree = () => {
+        $("body").append(
+          "<table><thead><tr><th><th><tbody><tr><td><td><tr><td><td><tr><td><td>"
+        )
+        $("th").first().text("Firstname").end().last().text("Lastname")
+        const firstNames = ["Guillaume", "Paulette", "Antoine"]
+        firstNames.forEach((e, i) => {
+          $(`tr:nth-child(${i + 1}) td`)
+            .first()
+            .text(e)
+            .end()
+            .last()
+            .text("Salva")
+        })
+      }
+      createFamilyTree()
+      const replaceFamilyTree = () => {
+        $("tbody").html(`
+          <tr>
+            <td>Gerard</td>
+            <td>Bonissa</td>
+          </tr>
+        `)
+      }
+      replaceFamilyTree()
+    </script>
+  </body>
 </html>
